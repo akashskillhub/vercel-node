@@ -48,7 +48,7 @@ app.use("*", (req, res) => {
     })
 })
 app.use(errorHandler)
-const PORT = process.env.PORT || 5000
+const PORT = process.env.VERCEL_PORT || 5000
 
 mongoose.connection.once("open", () => {
     app.listen(PORT, console.log(`SEVER RUNNING http://localhost:${PORT} `))
