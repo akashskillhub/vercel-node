@@ -26,6 +26,7 @@ app.use(cors({
             "http://localhost:5173",
             "http://localhost:3000",
             "https://www.google.com",
+            "https://akashskillhub.github.io/vercel-react"
         ]
         if (allowed.indexOf(o) !== -1 || !o) {
             cb(null, true)
@@ -62,4 +63,4 @@ mongoose.connection.on("error", err => {
     })
 })
 
-module.exports =  app
+module.exports = app
