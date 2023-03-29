@@ -1,3 +1,4 @@
+29-03-2023 	 10:33:19	Error	ENOENT: no such file or directory, stat 'D:\host\backend\index.html'	GET	/login	undefined
 24-03-2023 	 15:02:41	TypeError	Cannot read properties of null (reading 'products')	POST	/order/place	http://localhost:3000
 20-03-2023 	 16:04:53	TypeError	Assignment to constant variable.	PUT	/products/update-product/6418369af9d4eb1c879323dc	undefined
 20-03-2023 	 15:47:17	JsonWebTokenError	jwt malformed	POST	/products/add-product	undefined
