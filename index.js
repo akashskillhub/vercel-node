@@ -1,6 +1,6 @@
 const express = require("express")
 const path = require("path")
-require("dotenv").config({ path: "./.env" })
+require("dotenv").config({ path: ".env" })
 const cors = require("cors")
 const cookieParser = require("cookie-parser")
 const mongoose = require("mongoose")
@@ -61,6 +61,7 @@ mongoose.connection.on("error", err => {
         fileName: "mongo.log",
         message: msg
     })
+    console.log(error);
 })
 
 module.exports = app
