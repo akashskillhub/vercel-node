@@ -47,7 +47,7 @@ app.use("*", (req, res) => {
     // res.json({
     //     message: path.join(__dirname, "public", "index.html")
     // })
-    res.sendFile(path.join(__dirname, "index.html"))
+    res.sendFile(path.join(__dirname, "public"))
     // res.status(400).json({
     //     message: "404:resourse you are lokking for is not available"
     // })
