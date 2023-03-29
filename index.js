@@ -44,10 +44,10 @@ app.use("/api/auth", require("./routes/authRoute"))
 app.use("/api/products", require("./routes/productRoute"))
 app.use("*", (req, res) => {
     // res.sendFile(__dirname + '/index.html')
-    res.json({
-        message: path.join(__dirname, "public", "index.html")
-    })
-    // res.sendFile(path.join(__dirname, "public", "index.html"))
+    // res.json({
+    //     message: path.join(__dirname, "public", "index.html")
+    // })
+    res.sendFile(path.join(__dirname, "index.html"))
     // res.status(400).json({
     //     message: "404:resourse you are lokking for is not available"
     // })
